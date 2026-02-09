@@ -10,7 +10,7 @@ body {
   padding: 20px;
   background: #ffff;
   border-radius: 16px;
-  box-shadow: 0 6px 20pxrgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 
 }
 
@@ -24,7 +24,7 @@ body {
   height: 420px;
   overflow-y: auto;
   padding: 15px;
-  border-radius: #f9fafb;
+  background: #f9fafb;
   border: 1px solid #b7babe;
   border-radius: 15px;
   margin-top: 15px;

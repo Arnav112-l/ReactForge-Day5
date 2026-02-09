@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './App.css';
+import '../App.css';
 
 const OLLAMA_URL = "http://localhost:11434/api/generate";
 const MODEL = "llama3"; // Or use "phi3" / "gemma:2b" for faster responses
@@ -80,16 +80,23 @@ export default function ChatBot() {
           </div>
         ))}
       </div>
-        <div className="input-area"/>
+
+        <div className="input-area">
       <input 
         value={message}
         placeholder="Ask anything..."
         onChange={(e) => setMessage(e.target.value)}
+        onKeyDown={(e)=> {
+        if(e.key === "Enter")sendMessage();
+        }}
       />
 
       <button onClick={sendMessage} disabled={loading}>
         {loading ? "Thinking..." : "Send"}
       </button>
+      </div>
     </div>
   );
 }
+
+// export default ChatBot;
