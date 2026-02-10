@@ -1,4 +1,4 @@
-# Ollama ChatBot
+# Ai ChatBot
 
 A React-based chatbot powered by [Ollama](https://ollama.com) for local AI inference. Features real-time streaming responses.
 
@@ -49,7 +49,7 @@ Open [http://localhost:3000](http://localhost:3000) to use the chatbot.
 
 ## Configuration
 
-To change the model, edit the `MODEL` constant in `src/Chatbot.js`:
+To change the model, edit the `MODEL` constant in `src/pages/Chatbot.js`:
 
 ```javascript
 const MODEL = "phi3"; // Change to your preferred model
